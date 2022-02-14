@@ -1,0 +1,113 @@
+{
+	"react component": {
+		"prefix": "re-comp",
+		"body": [
+			"class ${1:CompName} extends React.Component {",
+			"  render() {",
+			"    return (",
+			"      <div>${2:}</div>",
+			"    );",
+			"  }",
+			"}"
+		],
+		"description": "react component"
+	},
+	"react component state": {
+		"prefix": "re-comp-state",
+		"body": [
+			"class ${1:CompName} extends React.Component {",
+			"  constructor(props) {",
+			"    super(props);",
+			"    this.state = {};",
+			"  }",
+			"",
+			"  // lifecycle hooks",
+			"  ",
+			"  // methods",
+			"  ",
+			"  render() {",
+			"    return (",
+			"      <div>${2:}</div>",
+			"    );",
+			"  }",
+			"}"
+		],
+		"description": "react component state"
+	},
+	"react state": {
+		"prefix": "re-state",
+		"body": [
+			"constructor(props) {",
+			"  super(props);",
+			"  this.state = {};",
+			"}"
+		],
+		"description": "react state"
+	},
+	"react render": {
+		"prefix": "re-render",
+		"body": [
+			"ReactDOM.render(",
+			"  ${1:App},",
+			"  document.getElementById('root')",
+			");"
+		],
+		"description": "react render"
+	},
+	"react interpolate": {
+		"scope": "javascript,html,jsx",
+		"prefix": "rint",
+		"body": [
+			"{ ${1:} }"
+		],
+		"description": "react interpolate"
+	},
+	"console log": {
+		"prefix": "console log",
+		"body": [
+			"console.log"
+		],
+		"description": "console log"
+	},
+	"react bind this": {
+		"prefix": "re-bind-this",
+		"body": [
+			"this.${1:methodName} = this.${1:methodName}.bind(this);"
+		],
+		"description": "react bind this"
+	},
+	"react pass arg to event handler": {
+		"prefix": "re-pass-arg-event",
+		"body": [
+			"(e) => this.${1:methodName}(${2:\"arg\"}, e)"
+		],
+		"description": "react pass arg to event handler"
+	},
+	"react onClick": {
+		"scope": "javascript,html,jsx",
+		"prefix": "re-onclick",
+		"body": [
+			"onClick={ ${1:} }"
+		],
+		"description": "react onClick"
+	},
+	"react map": {
+		"scope": "javascript,html,jsx",
+		"prefix": "re-map",
+		"body": [
+			"${1:listing}.map((item, index) =>",
+			"  <li key={}>${1:}</li>",
+			")"
+		],
+		"description": "react map"
+	},
+	"react fragment": {
+		"prefix": "re-frag",
+		"body": [
+			"<React.Fragment>",
+			"  ${1:}",
+			"</React.Fragment>"
+		],
+		"description": "react fragment"
+	}
+}
