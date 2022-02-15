@@ -1,6 +1,6 @@
 {
-	"react component": {
-		"prefix": "re-comp",
+	"react class component": {
+		"prefix": "re-class-comp",
 		"body": [
 			"class ${1:CompName} extends React.Component {",
 			"  render() {",
@@ -10,10 +10,10 @@
 			"  }",
 			"}"
 		],
-		"description": "react component"
+		"description": "react class component"
 	},
-	"react component state": {
-		"prefix": "re-comp-state",
+	"react class component state": {
+		"prefix": "re-class-comp-state",
 		"body": [
 			"class ${1:CompName} extends React.Component {",
 			"  constructor(props) {",
@@ -32,7 +32,7 @@
 			"  }",
 			"}"
 		],
-		"description": "react component state"
+		"description": "react class component state"
 	},
 	"react state": {
 		"prefix": "re-state",
@@ -109,5 +109,25 @@
 			"</React.Fragment>"
 		],
 		"description": "react fragment"
+	},
+	"react setState": {
+		"prefix": "re-setstate",
+		"body": [
+			"this.setState({",
+			"  ${1:example}",
+			"});"
+		],
+		"description": "react setState"
+	},
+	"react function component": {
+		"prefix": "re-func-comp",
+		"body": [
+			"function ${1:CompName}(props) {",
+			"  return (",
+			"    ${2:<div>${3:}</div>}",
+			"  );",
+			"}"
+		],
+		"description": "react function component"
 	}
 }
